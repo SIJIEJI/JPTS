@@ -55,7 +55,7 @@ This repo provides three SOTA methods: CSINet, CRNet and CLNet. You can simply c
 An example of run.sh is listed below. Simply use it with `sh run.sh`.  Change scenario using `--scenario` and change compression ratio with `--cr`.
 
 ``` bash
-python /home/CLNet/main.py \
+python /home/JPTS/main.py \
   --data-dir '/home/COST2100' \
   --scenario 'in' \
   --epochs 1000 \
@@ -74,15 +74,15 @@ The NMSE result reported in the paper as follow:
 CSINet:
 |Scenario | Compression Ratio | NMSE | Checkpoints
 |:--: | :--: | :--: | :--: | 
-|indoor | 1/4 | -29.16 |  in4.pth |
-|indoor | 1/8 |  -15.60|  in8.pth|
-|indoor | 1/16 | -11.15 |  in16.pth|
-|indoor | 1/32 | -8.95 |  in32.pth|
-|indoor | 1/64 | -6.34 |  in64.pth|
-|indoor | 1/128 | -6.34 |  in64.pth|
-|indoor | 1/256 | -6.34 |  in64.pth|
-|indoor | 1/512 | -6.34 |  in64.pth|
-|indoor | 1/1024 | -6.34 |  in64.pth|
+|indoor | 1/4 | -26.55 |  CSINET_IN_4.pth |
+|indoor | 1/8 |  -24.16|  CSINET_IN_8.pth|
+|indoor | 1/16 | -22.30 |  CSINET_IN_16.pth|
+|indoor | 1/32 | -21.29 |  CSINET_IN_32.pth|
+|indoor | 1/64 | -19.19 |  CSINET_IN_64.pth|
+|indoor | 1/128 | -18.25 |  CSINET_IN_128.pth|
+|indoor | 1/256 | -16.90 |   CSINET_IN_256.pth|
+|indoor | 1/512 | -16.38 |  CSINET_IN_512.pth|
+|indoor | 1/1024 | -15.95 | CSINET_IN_1024.pth|
 |outdoor | 1/4 | -12.88 | out4.pth|
 |outdoor | 1/8 | -8.29 |  out8.pth|
 |outdoor | 1/16 | -5.56 |  out16.pth|
@@ -137,7 +137,7 @@ CLNet:
 |outdoor | 1/512 | -6.34 |  in64.pth|
 |outdoor | 1/1024 | -6.34 |  in64.pth|
 
-If you want to reproduce our result, you can directly download the corresponding checkpoints from [Dropbox](https://www.dropbox.com/sh/qhqknm60i97a966/AABip4HD4lw4_BdfuM7NtCGWa?dl=0)
+If you want to reproduce our result, you can directly download the corresponding checkpoints from [OneDrive](https://entuedu-my.sharepoint.com/:f:/g/personal/sijie001_e_ntu_edu_sg/ErxmhooY67FAj_z_MNNgaHgBiqvcWv_QQXr0lOTRbYyI1A?e=Zxxay5)
 
 
 **To reproduce all these results, simple add `--evaluate` to `run.sh` and pick the corresponding pre-trained model with `--pretrained`.** An example is shown as follows.
