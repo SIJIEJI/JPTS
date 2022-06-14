@@ -1,17 +1,11 @@
 ## Overview
 
-This is the PyTorch implementation of the paper [CLNet: Complex Input Lightweight Neural
-Network designed for Massive MIMO CSI Feedback](https://ieeexplore.ieee.org/document/9497358).
+This is the PyTorch implementation of the paper [JPTS:Solving Performance Degradation of Massive
+MIMO CSI Feedback]().
 If you feel this repo helpful, please cite our paper:
 
 ```
-@article{ji2021clnet,
-  title={CLNet: Complex Input Lightweight Neural Network designed for Massive MIMO CSI Feedback},
-  author={Ji, Sijie and Li, Mo},
-  journal={IEEE Wireless Communications Letters},
-  year={2021},
-  publisher={IEEE}
-  doi={10.1109/LWC.2021.3100493}}
+@article{}
 }
 
 ```
@@ -39,7 +33,7 @@ We recommend you to arrange the project tree as follows.
 
 ```
 home
-├── CLNet  # The cloned CLNet repository
+├── JPTS  # The cloned CLNet repository
 │   ├── dataset
 │   ├── models
 │   ├── utils
@@ -55,9 +49,10 @@ home
 ...
 ```
 
-## Train CLNet from Scratch
+## Adpoting JPTS to SOTA methods
 
-An example of run.sh is listed below. Simply use it with `sh run.sh`. It starts to train CLNet from scratch. Change scenario using `--scenario` and change compression ratio with `--cr`.
+This repo provides three SOTA methods: CSINet, CRNet and CLNet. You can simply configure [crnet.py](https://github.com/SIJIEJI/JPTS/blob/main/models/crnet.py#L312) to change the models and train it from the scratch. 
+An example of run.sh is listed below. Simply use it with `sh run.sh`.  Change scenario using `--scenario` and change compression ratio with `--cr`.
 
 ``` bash
 python /home/CLNet/main.py \
@@ -74,26 +69,9 @@ python /home/CLNet/main.py \
 
 ## Results and Reproduction
 
-#### A. Model Complexity
-
-The params and flops are directly caculated by [thop](https://github.com/Lyken17/pytorch-OpCounter). If you use this repo's code directly, the model complexity will be printed to the trainning log. A [sample training log](https://www.dropbox.com/sh/qhqknm60i97a966/AABip4HD4lw4_BdfuM7NtCGWa?dl=0) for your reference. The flops reported in the paper are caculated by fvcore to align with other SOTA works. The fvcore caculator didn't count the BN layer in, therefore it's less than thop. 
-
- | Compression Ratio | #Params | Flops | 
- | :--: | :--: | :--: | 
- | 1/4 | 2102K | 4.42M | 
- | 1/8 | 1053K | 3.37M |
- | 1/16 | 528.7K | 2.85M | 
- | 1/32 | 266.5K | 2.58M | 
- | 1/64 | 135.4K | 2.45M | 
- 
-
-
-#### B. Performance
-
-
 
 The NMSE result reported in the paper as follow:
-
+CSINet:
 |Scenario | Compression Ratio | NMSE | Checkpoints
 |:--: | :--: | :--: | :--: | 
 |indoor | 1/4 | -29.16 |  in4.pth |
@@ -101,11 +79,63 @@ The NMSE result reported in the paper as follow:
 |indoor | 1/16 | -11.15 |  in16.pth|
 |indoor | 1/32 | -8.95 |  in32.pth|
 |indoor | 1/64 | -6.34 |  in64.pth|
+|indoor | 1/128 | -6.34 |  in64.pth|
+|indoor | 1/256 | -6.34 |  in64.pth|
+|indoor | 1/512 | -6.34 |  in64.pth|
+|indoor | 1/1024 | -6.34 |  in64.pth|
 |outdoor | 1/4 | -12.88 | out4.pth|
 |outdoor | 1/8 | -8.29 |  out8.pth|
 |outdoor | 1/16 | -5.56 |  out16.pth|
 |outdoor | 1/32 | -3.49 |  out32.pth|
 |outdoor | 1/64 | -2.19 |  out64.pth|
+|outdoor | 1/128 | -6.34 |  in64.pth|
+|outdoor | 1/256 | -6.34 |  in64.pth|
+|outdoor | 1/512 | -6.34 |  in64.pth|
+|outdoor | 1/1024 | -6.34 |  in64.pth|
+
+CRNet:
+|Scenario | Compression Ratio | NMSE | Checkpoints
+|:--: | :--: | :--: | :--: | 
+|indoor | 1/4 | -29.16 |  in4.pth |
+|indoor | 1/8 |  -15.60|  in8.pth|
+|indoor | 1/16 | -11.15 |  in16.pth|
+|indoor | 1/32 | -8.95 |  in32.pth|
+|indoor | 1/64 | -6.34 |  in64.pth|
+|indoor | 1/128 | -6.34 |  in64.pth|
+|indoor | 1/256 | -6.34 |  in64.pth|
+|indoor | 1/512 | -6.34 |  in64.pth|
+|indoor | 1/1024 | -6.34 |  in64.pth|
+|outdoor | 1/4 | -12.88 | out4.pth|
+|outdoor | 1/8 | -8.29 |  out8.pth|
+|outdoor | 1/16 | -5.56 |  out16.pth|
+|outdoor | 1/32 | -3.49 |  out32.pth|
+|outdoor | 1/64 | -2.19 |  out64.pth|
+|outdoor | 1/128 | -6.34 |  in64.pth|
+|outdoor | 1/256 | -6.34 |  in64.pth|
+|outdoor | 1/512 | -6.34 |  in64.pth|
+|outdoor | 1/1024 | -6.34 |  in64.pth|
+
+CLNet:
+|Scenario | Compression Ratio | NMSE | Checkpoints
+|:--: | :--: | :--: | :--: | 
+|indoor | 1/4 | -29.16 |  in4.pth |
+|indoor | 1/8 |  -15.60|  in8.pth|
+|indoor | 1/16 | -11.15 |  in16.pth|
+|indoor | 1/32 | -8.95 |  in32.pth|
+|indoor | 1/64 | -6.34 |  in64.pth|
+|indoor | 1/128 | -6.34 |  in64.pth|
+|indoor | 1/256 | -6.34 |  in64.pth|
+|indoor | 1/512 | -6.34 |  in64.pth|
+|indoor | 1/1024 | -6.34 |  in64.pth|
+|outdoor | 1/4 | -12.88 | out4.pth|
+|outdoor | 1/8 | -8.29 |  out8.pth|
+|outdoor | 1/16 | -5.56 |  out16.pth|
+|outdoor | 1/32 | -3.49 |  out32.pth|
+|outdoor | 1/64 | -2.19 |  out64.pth|
+|outdoor | 1/128 | -6.34 |  in64.pth|
+|outdoor | 1/256 | -6.34 |  in64.pth|
+|outdoor | 1/512 | -6.34 |  in64.pth|
+|outdoor | 1/1024 | -6.34 |  in64.pth|
 
 If you want to reproduce our result, you can directly download the corresponding checkpoints from [Dropbox](https://www.dropbox.com/sh/qhqknm60i97a966/AABip4HD4lw4_BdfuM7NtCGWa?dl=0)
 
@@ -128,6 +158,6 @@ python /home/CLNet/main.py \
 
 ## Acknowledgment
 
-This repository is modified from the [CRNet open source code](https://github.com/Kylin9511/CRNet). Thanks Zhilin for his amazing work.
+This repository is modified from the [CLNet open source code](https://github.com/SIJIEJI/CLNet) & [CRNet open source code](https://github.com/Kylin9511/CRNet). 
 Thanks Chao-Kai Wen and Shi Jin group for providing the pre-processed COST2100 dataset, you can find their related work named CsiNet in [Github-Python_CsiNet](https://github.com/sydney222/Python_CsiNet) 
 
