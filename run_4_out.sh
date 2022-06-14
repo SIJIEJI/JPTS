@@ -1,1 +1,0 @@
-python main.py --data-dir '/home/jisijie/NAIC/NAIC2020_6G-master/paper/COST2100' --scenario 'in' --epochs 1000 --batch-size 200 --workers 0 --cr 64 --scheduler cosine --gpu 1 2>&1 | tee log_cr64_in2.out
