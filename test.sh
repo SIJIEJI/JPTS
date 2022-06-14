@@ -1,0 +1,1 @@
+python main.py --data-dir '/home/jisijie/NAIC/NAIC2020_6G-master/paper/COST2100' --scenario 'in' --pretrained './checkpoints/CRNET_IN_64.pth' --evaluate --batch-size 200 --workers 0 --cr 64  --gpu 3  | tee test_out.out
