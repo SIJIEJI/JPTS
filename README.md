@@ -1,6 +1,6 @@
 ## Overview
 
-This is the PyTorch implementation of the paper [JPTS:Solving Performance Degradation of Massive
+This is the PyTorch implementation of the paper [JPTS:Enhancing Deep Learning Performance of Massive
 MIMO CSI Feedback]().
 If you feel this repo helpful, please cite our paper:
 
