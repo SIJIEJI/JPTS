@@ -52,7 +52,7 @@ def init_model(args):
         logger.info("pretrained model loaded from {}".format(args.pretrained))
 
     # Model flops and params counting
-    image = torch.randn([1, 2, 33, 33])
+    image = torch.randn([1, 2, 32, 32])
     flops, params = thop.profile(model, inputs=(image,), verbose=False)
     flops, params = thop.clever_format([flops, params], "%.3f")
 
