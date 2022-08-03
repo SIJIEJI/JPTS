@@ -72,73 +72,51 @@ python /home/JPTS/main.py \
 
 The NMSE result reported in the paper as follow:
 
-## CSINet:
+## JPTS-CSINet:
 |Scenario | Compression Ratio | NMSE | Checkpoints
 |:--: | :--: | :--: | :--: | 
-|indoor | 1/4 | -26.55 |  CSINET_IN_4.pth |
-|indoor | 1/8 |  -24.16|  CSINET_IN_8.pth|
-|indoor | 1/16 | -22.30 |  CSINET_IN_16.pth|
-|indoor | 1/32 | -21.29 |  CSINET_IN_32.pth|
-|indoor | 1/64 | -19.19 |  CSINET_IN_64.pth|
-|indoor | 1/128 | -18.25 |  CSINET_IN_128.pth|
-|indoor | 1/256 | -16.90 |   CSINET_IN_256.pth|
-|indoor | 1/512 | -16.38 |  CSINET_IN_512.pth|
-|indoor | 1/1024 | -15.95 | CSINET_IN_1024.pth|
-|outdoor | 1/4 | -20.77 | CSINET_OUT_4.pth|
-|outdoor | 1/8 | -18.78 |  CSINET_OUT_8.pth|
-|outdoor | 1/16 | -17.41 |  CSINET_OUT_16.pth|
-|outdoor | 1/32 | -15.80 |  CSINET_OUT_32.pth|
-|outdoor | 1/64 | -14.38 |  CSINET_OUT_64.pth|
-|outdoor | 1/128 | 14.16 | CSINET_OUT_128.pth|
-|outdoor | 1/256 | -13.62 | CSINET_OUT_256.pthh|
-|outdoor | 1/512 | -13.39 | CSINET_OUT_512.pthh|
-|outdoor | 1/1024 | -13.32 | CSINET_OUT_1024.pth |
+|indoor | 1/4 | -24.19 |  CSINET_IN_4.pth |
+|indoor | 1/8 |  -15.20|  CSINET_IN_8.pth|
+|indoor | 1/16 | -10.65 |  CSINET_IN_16.pth|
+|indoor | 1/32 | -8.59 |  CSINET_IN_32.pth|
+|indoor | 1/64 | -6.26 |  CSINET_IN_64.pth|
+|outdoor | 1/4 | -12.20 | CSINET_OUT_4.pth|
+|outdoor | 1/8 | -7.97 |  CSINET_OUT_8.pth|
+|outdoor | 1/16 | -5.22 |  CSINET_OUT_16.pth|
+|outdoor | 1/32 | -3.12 |  CSINET_OUT_32.pth|
+|outdoor | 1/64 | -2.17 |  CSINET_OUT_64.pth|
 
-## CRNet:
+
+## JPTS-CRNet:
 |Scenario | Compression Ratio | NMSE | Checkpoints
 |:--: | :--: | :--: | :--: | 
-|indoor | 1/4 | -23.79 |  CRNET_IN_4.pth |
-|indoor | 1/8 |  -22.98|  CRNET_IN_8.pth|
-|indoor | 1/16 | -21.57 |  CRNET_IN_16.pth|
-|indoor | 1/32 | -21.74 |  CRNET_IN_32.pth|
-|indoor | 1/64 | -20.42 |  CRNET_IN_64.pth|
-|indoor | 1/128 | -18.43 |  CRNET_IN_128.pth|
-|indoor | 1/256 | -16.59 |  CRNET_IN_256.pth|
-|indoor | 1/512 | -16.38 |  CRNET_IN_512.pth|
-|indoor | 1/1024 | -16.01 |  CRNET_IN_1024.pth|
-|outdoor | 1/4 | -20.12 | CRNET_OUT_4.pth|
-|outdoor | 1/8 | -18.92 |  CRNET_OUT_8.pth|
-|outdoor | 1/16 | -16.77 |  CRNET_OUT_16.pth|
-|outdoor | 1/32 | -15.58 |  CRNET_OUT_32.pth|
-|outdoor | 1/64 | -14.95 |  CRNET_OUT_64.pth|
-|outdoor | 1/128 | -13.91 |  CRNET_OUT_128.pth|
-|outdoor | 1/256 | -13.50 |  CRNET_OUT_256.pth|
-|outdoor | 1/512 | -13.41 |  CRNET_OUT_512.pth|
-|outdoor | 1/1024 | -13.33 |  CRNET_OUT_1024.pth|
+|indoor | 1/4 | -26.84 |  CRNET_IN_4.pth |
+|indoor | 1/8 |  -16.32|  CRNET_IN_8.pth|
+|indoor | 1/16 | -11.55 |  CRNET_IN_16.pth|
+|indoor | 1/32 | -8.98 |  CRNET_IN_32.pth|
+|indoor | 1/64 | -6.50 |  CRNET_IN_64.pth|
+|outdoor | 1/4 | -12.72 | CRNET_OUT_4.pth|
+|outdoor | 1/8 | -8.01 |  CRNET_OUT_8.pth|
+|outdoor | 1/16 | -5.41 |  CRNET_OUT_16.pth|
+|outdoor | 1/32 | -3.38 |  CRNET_OUT_32.pth|
+|outdoor | 1/64 | -2.21 |  CRNET_OUT_64.pth|
 
-## CLNet:
+## JPTS-CLNet:
 |Scenario | Compression Ratio | NMSE | Checkpoints
 |:--: | :--: | :--: | :--: | 
-|indoor | 1/4 | -24.87 |  CLNET_IN_4.pth |
-|indoor | 1/8 |  -23.73|  CLNET_IN_8.pth|
-|indoor | 1/16 | -22.85 | CLNET_IN_16.pth|
-|indoor | 1/32 | -21.77 |  CLNET_IN_32.pth|
-|indoor | 1/64 | -20.26 |  CLNET_IN_64.pth|
-|indoor | 1/128 | -18.51 |  CLNET_IN_128.pth|
-|indoor | 1/256 | -17.43 | CLNET_IN_256.pth|
-|indoor | 1/512 | -16.83 |  CLNET_IN_512.pth|
-|indoor | 1/1024 | -16.06 | CLNET_IN_1024.pth|
-|outdoor | 1/4 | -20.77 | CLNET_OUT_4.pth|
-|outdoor | 1/8 | -18.78 |  CLNET_OUT_8.pth|
-|outdoor | 1/16 | -17.41 |  CLNET_OUT_16.pth|
-|outdoor | 1/32 | -15.80 | CLNET_OUT_32.pth|
-|outdoor | 1/64 | -14.38 | CLNET_OUT_64.pth|
-|outdoor | 1/128 | -14.26 |  CLNET_OUT_128.pth|
-|outdoor | 1/256 | -13.59 | CLNET_OUT_256.pth|
-|outdoor | 1/512 | -13.36 | CLNET_OUT_512.pth|
-|outdoor | 1/1024 | -13.32 | CLNET_OUT_1024.pth|
+|indoor | 1/4 | -28.38 |  CLNET_IN_4.pth |
+|indoor | 1/8 |  -16.03|  CLNET_IN_8.pth|
+|indoor | 1/16 | -12.16 | CLNET_IN_16.pth|
+|indoor | 1/32 | -9.00 |  CLNET_IN_32.pth|
+|indoor | 1/64 | -6.86 |  CLNET_IN_64.pth|
+|outdoor | 1/4 | -12.90 | CLNET_OUT_4.pth|
+|outdoor | 1/8 | -8.40 |  CLNET_OUT_8.pth|
+|outdoor | 1/16 | -5.61 |  CLNET_OUT_16.pth|
+|outdoor | 1/32 | -3.61 | CLNET_OUT_32.pth|
+|outdoor | 1/64 | -2.30 | CLNET_OUT_64.pth|
 
-If you want to reproduce our result, you can directly download the corresponding checkpoints from [OneDrive](https://entuedu-my.sharepoint.com/:f:/g/personal/sijie001_e_ntu_edu_sg/ErxmhooY67FAj_z_MNNgaHgBiqvcWv_QQXr0lOTRbYyI1A?e=Zxxay5)
+
+If you want to reproduce our result, you can directly download the corresponding checkpoints from [OneDrive](https://entuedu-my.sharepoint.com/:f:/g/personal/sijie001_e_ntu_edu_sg/Ej0oi6n3H1RNs84AnGfK2ukBk_9gynl4KBDsvLmZnnT5Zg?e=HYWsff)
 
 
 **To reproduce all these results, simple add `--evaluate` to `run.sh` and pick the corresponding pre-trained model with `--pretrained`.** An example is shown as follows.
