@@ -1,7 +1,7 @@
 ## Overview
 
 This is the PyTorch implementation of the paper [JPTS:Enhancing Deep Learning Performance of Massive
-MIMO CSI Feedback]().
+MIMO CSI Feedback](https://arxiv.org/pdf/2208.11333.pdf).
 If you feel this repo helpful, please cite our paper:
 
 ```
