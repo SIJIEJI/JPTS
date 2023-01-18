@@ -1,13 +1,16 @@
 ## Overview
 
-This is the PyTorch implementation of the paper [JPTS:Enhancing Deep Learning Performance of Massive
+This is the PyTorch implementation of the ICC'23 paper [JPTS:Enhancing Deep Learning Performance of Massive
 MIMO CSI Feedback](https://arxiv.org/pdf/2208.11333.pdf).
 If you feel this repo helpful, please cite our paper:
 
 ```
-@article{}
+@article{ji2022enhancing,
+  title={Enhancing Deep Learning Performance of Massive MIMO CSI Feedback},
+  author={Ji, Sijie and Li, Mo},
+  journal={arXiv preprint arXiv:2208.11333},
+  year={2022}
 }
-
 ```
 
 
